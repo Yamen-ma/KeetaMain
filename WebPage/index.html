@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Page</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .link-button {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .link-button:hover {
+            background-color: #555;
+            box-shadow: 0px 0px 10px #ffffff;
+        }
+        .link-button:disabled {
+    background-color: #555;
+    color: #999;
+    cursor: not-allowed;
+    box-shadow: none;}
+    .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    background-color: #555;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Choose your scripts</h1>
+    <div class="button-container">
+        <a href="https://yamen-ma.github.io/dc/" class="link-button">DC</a>
+        <a href="https://yamen-ma.github.io/" class="link-button">BD</a>
+        <a href="https://yamen-ma.github.io/" class="link-button disabled" disabled>C-side (Coming soon)</a>
+    </div>
+</body>
+</html>
