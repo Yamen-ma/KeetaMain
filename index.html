@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,12 +52,29 @@ text-shadow:
     1px -1px 0 rgb(177, 177, 177),  /* Top-right */
     -1px 1px 0 rgb(177, 177, 177),  /* Bottom-left */
     1px 1px 0 rgb(177, 177, 177);   /* Bottom-right */}
+#bgVideo {
+    background-color: black;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    width: 80vw; /* 80% of viewport width */
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Ensures the video fills the container */
+
+    }
 
 
 
     </style>
 </head>
 <body>
+    <video autoplay muted loop id="bgVideo">
+    <source src="bgg.mp4" type="video/mp4">
+</video>
+
     <h1>Choose your scripts</h1>
     <div class="button-container">
         <a href="DC.html" class="link-button">DC</a>
